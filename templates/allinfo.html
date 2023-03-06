@@ -6,16 +6,9 @@
 <div class="container mt-5">
     <!-- {{data}} 
     {{counter}} -->
-    {% for el in  range (counter)%}
+    {% for el in  range (10)%}
         <div class="alert alert-info">
-            <h7 style="font-weight: bold">Заказ № </h7>
-            <h7> № "{% print(data[el][6])  %}"</h7>
-            <h2>{% print(data[el][1])  %} {% print(data[el][2])  %}</h2>
-            <!-- <h7> Команда "{% print(data[el][4])  %}"</h7> -->
-            <h7 style="font-weight: bold"> Готов принять заказ "</h7><h7>{% print(data[el][3])  %}"</h7>
-            <h7 style="font-weight: bold"> Телефон "</h7><h7>{% print(data[el][0])  %}"</h7>
-            <h7 style="font-weight: bold"> Номер заказа "</h7><h7>{% print(data[el][4])  %}"</h7>
-            <h7 style="font-weight: bold"> Адрес доставки "</h7><h7>{% print(data[el][5])  %}"</h7>
+
         </div>
     {% endfor %}
    
